@@ -46,6 +46,35 @@ p {
   border-radius: 10px;
 }
 
+/* Nav Bar */
+
+nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Lato;
+  font-size: 2rem;
+}
+
+.nav--link {
+  background-color: #ff0095;
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+a:hover {
+    color: black;
+}
+
 /* Media Queries */
 
 @media (max-width: 800px) {
@@ -108,5 +137,18 @@ p {
 
   br {
     display: none;
+  }
+
+  .nav--link {
+    padding: 10px 20px;
+    border-radius: 40px;
+  }
+  a {
+    font-size: 1rem;
+  }
+
+  nav {
+    margin-right: 10px;
+    margin-top: 10px;
   }
 }
