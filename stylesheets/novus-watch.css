@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", sans-serif;
+  margin: 0;
+  background-color: #a7a8cd;
+}
+
+p,
+h1 {
+  margin-top: 0;
+}
+
+.badge__container {
+  background-color: #fdf1b4;
+  width: 250px;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  left: 400px;
+  top: 70px;
+}
+
+.main__container > img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.info__container {
+  background-color: white;
+  width: 600px;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.header__tag {
+  font-size: 2rem;
+  color: grey;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
