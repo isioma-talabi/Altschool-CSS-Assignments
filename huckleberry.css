@@ -82,9 +82,14 @@ header {
 
 nav {
   display: flex;
-  justify-content: end;
-  margin-right: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
   margin-top: 0px;
+}
+
+ul {
+  margin: 0;
+  display: flex;
 }
 ul > li {
   list-style: none;
@@ -92,15 +97,25 @@ ul > li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: Lato;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nav--link {
   background-color: #009966;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 50px;
+}
+
+.nav__back > a {
+  color: #009966;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.nav__back > a:hover {
+    color: black;
 }
 
 a:hover {
@@ -140,7 +155,6 @@ a:hover {
     position: relative;
     left: 0px;
   }
-
 }
 
 @media screen and (max-width: 430px) {
@@ -181,22 +195,21 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 344px) {
+  .sub-heading__container {
+    width: 320px;
+  }
 
-@media screen and (max-width: 344px){
-    .sub-heading__container {
-        width: 320px;
-    }
+  .rule {
+    width: 330px;
+  }
 
-    .rule {
-        width: 330px;
-    }
-
-    .header__container {
+  .header__container {
     padding: 0px 10px 50px 20px;
     width: 100%;
   }
 
   .no-break {
     display: none;
-  }  
+  }
 }
