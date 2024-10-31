@@ -107,3 +107,77 @@ a:hover {
 }
 
 /* Media Queries */
+@media screen and (max-width: 500px) {
+
+.main__container > img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.info__container {
+  background-color: white;
+  width: 300px;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.header__tag {
+  font-size: 1rem;
+}
+
+
+.badge__container {
+  
+  width: 170px;
+  height: 40px;
+  position: relative;
+  left: 31px;
+  top: 50px;
+  padding: 8px 10px;
+  
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+
+body {
+   max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+ /* Nav Bar */
+  .nav__back > a {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  .nav--link {
+    padding: 10px 15px;
+    border-radius: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

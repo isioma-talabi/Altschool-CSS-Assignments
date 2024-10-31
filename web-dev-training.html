@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Wellness Experience</title>
+    <link rel="stylesheet" href="./stylesheets/web-dev-training.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Font Family: Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9a11d66afd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__back"><a href="./novus-watch.html">Go back</a></div>
+            <ul>
+                <li>
+                    <div class="nav--link"><a href="./web-dev-training.html">5</a></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+
+            <div class="first-section">
+                <img src="./assets/Logo.png" height="100px" alt="Logo of Wellness Centre">
+
+                <div class="intro-text-container">
+                    <h1>For Individuals</h1>
+                    <p class="intro-text" id="no-display-mobile">Start benefiting from the wellness experience. For
+                        companies looking on
+                        increasing productivity,
+                        and improving organization wellness.</p>
+                    <p class="intro-text" id="no-display">Inspiring wholesome harmony for the mind, <br> body and
+                        spirit, for everyone, everywhere.</p>
+
+                </div>
+            </div>
+
+            <div class="second-section-form">
+                <form action="" method="get">
+                    <div class="form__for-flex">
+                        <div class="form_section">
+                            <label for="first-name">First Name</label> <br>
+                            <input type="text" name="first-name" id="first-name" placeholder="Tolu" required>
+                        </div>
+
+                        <div class="form_section">
+                            <label for="last-name">Last Name</label> <br>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+
+                        <div class="form_section">
+                            <label for="gender">Gender</label> <br>
+                            <input list="gender" placeholder="Select gender">
+
+                            <datalist id="gender">
+
+                                <option value="Female"></option>
+                                <option value="Male"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="form_section">
+                            <label for="dob">Date of Birth</label> <br>
+                            <input type="date" name="dob" id="dob" placeholder="Select here">
+                        </div>
+
+                        <div class="form_section">
+                            <label for="weight">Weight (KG)</label> <br>
+                            <input type="text" name="weight" id="weight" placeholder="Enter Weight" required>
+                        </div>
+
+                        <div class="form_section">
+                            <label for="height">Height (CM)</label> <br>
+                            <input type="text" name="height" id="height" placeholder="Enter height" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form_section">
+                        <label for="activity-level">Activity Level</label> <br>
+                        <input id="activity-input" list="activity-level" placeholder="Select here">
+
+                        <datalist id="activity-level">
+                            <option value="Beginner"></option>
+                            <option value="Normal"></option>
+                            <option value="Expert"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="form_section">
+                        <label for="password"> Password </label> <br>
+                        <input type="password" name="password" id="password" required>
+                        <i class="fa-solid fa-eye icon" style="color: #737373;"></i>
+                    </div>
+
+                    <button>Register</button>
+
+                    <p class="footer-text" id="hide-on-mobile">By clicking Register, you agree to our <span class="text-highlight">Terms of
+                            Use</span> and our
+                        <span class="text-highlight">Privacy Policy</span>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+
+        <p class="footer-text" id="display-on-mobile">By clicking Register, you agree to our <span class="text-highlight">Terms of
+              <br>  Use</span> and our
+            <span class="text-highlight">Privacy Policy</span>
+        </p>
+
+    </main>
+</body>
+
+</html>
