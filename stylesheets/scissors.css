@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../assets/gilroy-font/Gilroy-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../assets/gilroy-font/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../assets/gilroy-font/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+}
+
+:root {
+    --primary-font: "Gilroy", sans-serif;
+    --font-blue-color: #0065FE;
+    --font-text-color: #141414;
+    --font-footer-color: #112232;
+}
+
+body {
+    font-family: var(--primary-font), sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
