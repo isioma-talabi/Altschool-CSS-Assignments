@@ -33,6 +33,7 @@ body {
   font-family: var(--primary-font), sans-serif;
   margin: 0;
   padding: 0;
+  max-width: 1500px;
 }
 
 /* Navigation Bar */
@@ -44,8 +45,14 @@ ul > li {
   list-style: none;
 }
 
+ul > li:hover {
+    color: var(--font-blue-color);
+    text-decoration: underline;
+}
+
 ul {
   margin: 10px;
+  position: relative;
 }
 
 nav {
@@ -76,6 +83,12 @@ nav {
 
 .inline--style {
   color: var(--font-blue-color);
+}
+
+#dropfmenu {
+    position: absolute;
+    left: 225px;
+    bottom: 0.1px;
 }
 
 /* Intro Section */
@@ -176,7 +189,7 @@ h1 {
 .data__container {
   display: flex;
   justify-content: space-between;
-  max-width: 1446px;
+  width: 1440px;
   height: 220px;
   background-color: #fafbfd;
   position: relative;
@@ -219,6 +232,37 @@ h1 {
   font-size: 32px;
 }
 
+/* Inline Line Styling */
+
+#line-one::before {
+  content: "";
+  position: absolute;
+  left: 105px;
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(to bottom, #112232, #ffffff);
+}
+
+#line-two::before {
+  content: "";
+  position: absolute;
+  left: 470px;
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(to bottom, #112232, #ffffff);
+}
+
+#line-three::before {
+  content: "";
+  position: absolute;
+  left: 660px;
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(to bottom, #112232, #ffffff);
+}
+
+/* End of Inline Line styling */
+
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -248,7 +292,7 @@ h1 {
 .price__container > h2 {
   font-size: 32px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 10px;
 }
 
@@ -261,7 +305,332 @@ h1 {
 }
 
 .cards__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 150px;
+  display: flex;
+  width: inherit;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cards {
+  border: 0.5px solid var(--font-blue-color);
+  width: 379px;
+  height: 450px;
+  padding: 10px 7cqb 0;
+  position: relative;
+}
+
+.cards--middle {
+  width: 410px;
+  height: 627px;
+  background-color: #1e3448;
+  color: white;
+  padding: 90px 7cqb 0;
+  border-radius: 12px;
+}
+
+.cards--middle > ul > li {
+  line-height: 2.5rem;
+  background-image: url(../assets/scissors-assets/white-check-circle.png);
+  background-repeat: no-repeat;
+  padding-left: 2.5rem;
+  background-position: left center;
+}
+
+.cards > ul {
+  margin: 0;
+  padding: 0;
+  line-height: 2.5rem;
+}
+
+.cards > ul > li {
+  background-image: url(../assets/scissors-assets/blue-check-circle.png);
+  background-repeat: no-repeat;
+  padding-left: 2.5rem;
+  background-position: left center;
+}
+
+.cards--middle > ul {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.cards--bold-style {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.cards-text {
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+#card-one {
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+}
+
+#card-three {
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Pricing Buttons */
+.pricing-btns {
+  margin: 100px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.price-btn-one {
+  width: 200px;
+  height: 48px;
+  font-family: var(--primary-font);
+  background-color: white;
+  border: 1px solid var(--font-blue-color);
+  border-radius: 50px;
+  color: var(--font-blue-color);
+}
+
+.price-btn-two {
+  width: 200px;
+  height: 48px;
+  font-family: var(--primary-font);
+  color: white;
+  background-color: var(--font-blue-color);
+  border: none;
+  border-radius: 50px;
+}
+
+/* FAQs One */
+
+.faqs-one {
+  width: 1440px;
+  height: 523px;
+  background-image: url(../assets/scissors-assets/faq.png);
+  align-content: center;
+}
+
+form {
+  background-color: white;
+  width: 476px;
+  height: 365px;
+  margin: 0 auto;
+  padding: 50px;
+  color: var(--font-blue-color);
+  border-radius: 12px;
+}
+
+#url {
+  width: 380px;
+  height: 55px;
+  font-family: var(--primary-font);
+  color: #3284ff;
+  padding: 20px;
+  border: 1px solid #3284ff;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  align-self: center;
+}
+
+#url::placeholder {
+  font-family: var(--primary-font);
+  color: #3284ff;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 200px;
+  height: 48px;
+  font-family: var(--primary-font);
+  color: #3284ff;
+  border: 1px solid #3284ff;
+  padding: 0 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+#alias {
+  width: 150px;
+  height: 48px;
+  font-family: var(--primary-font);
+  color: #3284ff;
+  padding: 20px;
+  border: 1px solid #3284ff;
+  border-radius: 12px;
+}
+
+#alias::placeholder {
+  font-family: var(--primary-font);
+  color: #3284ff;
+}
+
+form > button {
+  width: 380px;
+  font-family: var(--primary-font);
+  background-color: #3284ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+form > button > img {
+  position: relative;
+  top: 9px;
+}
+
+form > p {
+  color: #3284ff;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* FAQs Second Section */
+.faqs-two {
+  width: inherit;
+  height: 1153px;
+  background-image: url(../assets/scissors-assets/FAQs.png);
+}
+
+.faqs-two > h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.faqs-two > .details-table {
+  width: 792px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+summary {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 35px 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+details {
+  border-bottom: 0.5px solid #d6d6d6;
+  line-height: 1.5rem;
+}
+
+/* Add the "+" icon */
+summary::after {
+  content: "";
+  position: absolute;
+  left: 1095px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+  background-image: url(../assets/scissors-assets/plus.png);
+  background-size: cover;
+}
+
+/* Change to "-" when details is open */
+details[open] summary::after {
+  background-image: url(../assets/scissors-assets/minus.png);
+  transform: rotate(180deg);
+}
+
+/* Footer One */
+
+.footer-one {
+  width: inherit;
+  height: 250px;
+  background-image: url(../assets/scissors-assets/footerone.png);
+  background-repeat: no-repeat;
+  align-content: center;
+  /* padding: 50px; */
+}
+
+.footer-one > h2 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  font-size: 40px;
+}
+
+.footer-one > button {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  font-family: var(--primary-font);
+  color: white;
+  background-color: var(--font-blue-color);
+  border: none;
+  border-radius: 50px;
+}
+
+.footer-two {
+  display: flex;
+  gap: 150px;
+  width: 1440px;
+  height: 561px;
+  background-image: url(../assets/scissors-assets/footertwo.png);
+  padding: 50px 250px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 0px;
+}
+
+.flinks > ul {
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
+.flinks > ul > li > a {
+  text-decoration: none;
+  color: var(--font-footer-color);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.flinks > ul > li > a:hover {
+    color: var(--font-blue-color);
+    text-decoration: underline;
+}
+
+.flinks > h5 {
+  margin-top: 0;
+}
+
+.sm-logos {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 20px;
+  left: 1100px;
+  font-size: 14px;
 }

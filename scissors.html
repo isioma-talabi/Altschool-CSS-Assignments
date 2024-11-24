@@ -12,7 +12,7 @@
 <body>
 
     <div class="intro-section">
-    <div class="background"></div>
+        <div class="background"></div>
         <header>
             <nav>
                 <div class="logo">
@@ -21,7 +21,7 @@
                 <div class="nav__list">
                     <ul>
                         <li><span class="inline--style">My URLs</span></li>
-                        <li>Features </li>
+                        <li>Features <img id="dropfmenu" src="./assets/scissors-assets/chevron-down.png" alt=""> </li>
                         <li>Pricing</li>
                         <li>Analytics</li>
                         <li>FAQs</li>
@@ -53,7 +53,8 @@
         <img src="./assets/scissors-assets/sci-triangle.png" alt="" height="260px">
         <div class="header--image">
             <img src="./assets/scissors-assets/links.png" alt="Links made easy">
-            <p class="text-one">Seamlessly transform your long URLs into concise and shareable links with just few clicks.</p>
+            <p class="text-one">Seamlessly transform your long URLs into <strong>concise</strong> and <strong>shareable
+                    links</strong> with just few clicks.</p>
         </div>
     </div>
 
@@ -97,8 +98,9 @@
 
     <div class="about-section__container">
         <div>
-            <h2>Why choose <span class="inline--style">Scissors</span></h2>
-            <p>Scissors is the hub of everything that has to do <br> with your link management. We shorten your URLs, <br>
+            <h2 id="line-one">Why choose <span class="inline--style">Scissors</span></h2>
+            <p>Scissors is the hub of everything that has to do <br> with your link management. We shorten your URLs,
+                <br>
                 allow you creating
                 custom ones for your personal, business, event usage. Our swift QR code creation, management and
                 usage tracking with
@@ -140,7 +142,7 @@
 
 
     <div class="price__container">
-        <h2>A <span class="inline--style">price perfect</span> for your needs.</h2>
+        <h2 id="line-two">A <span class="inline--style">price perfect</span> for your needs.</h2>
         <p>From catering for your personal, business, event, socials needs, you can be <br> rest assured we have you in
             mind in our
             pricing.</p>
@@ -148,10 +150,10 @@
 
 
     <div class="cards__container">
-        <div class="cards">
+        <div id="card-one" class="cards">
             <h4>Basic</h4>
             <p class="cards--bold-style">Free</p>
-            <p>Free plan for all users</p>
+            <p class="cards-text">Free plan for all users</p>
             <ul>
                 <li>Unlimited URL Shortening</li>
                 <li>Basic Link Analytics</li>
@@ -165,7 +167,7 @@
         <div class="cards--middle">
             <h4>Professional</h4>
             <p class="cards--bold-style">$15/ month</p>
-            <p>Ideal for business creators</p>
+            <p class="cards-text">Ideal for business creators</p>
             <ul>
                 <li>Enhanced Link Analytics</li>
                 <li>Custom Branded Domains</li>
@@ -175,10 +177,10 @@
             </ul>
         </div>
 
-        <div class="cards">
+        <div id="card-three" class="cards">
             <h4>Teams</h4>
             <p class="cards--bold-style">$25/ month</p>
-            <p>Share with up to 10 users</p>
+            <p class="cards-text">Share with up to 10 users</p>
             <ul>
                 <li>Team Collaboration</li>
                 <li>Useer Roles and Permissions</li>
@@ -198,7 +200,7 @@
         <form action="" method="get">
             <input type="text" id="url" name="url" placeholder="Paste URL here...">
 
-            <div>
+            <div class="form-inputs">
                 <select name="domain" id="domain-select">
                     <option value="">Choose Domain</option>
                     <option value="com">com</option>
@@ -209,14 +211,15 @@
                 <input type="text" id="alias" name="alias" placeholder="Type Alias here">
             </div>
 
-            <button>Trim URL <img src="" alt=""></button>
+            <button>Trim URL <img src="./assets/scissors-assets/magic wand.png" alt=""></button>
 
-            <p>By clicking TrimURL, I agree to the Terms of Service, Privacy Policy and Use of Cookies.</p>
+            <p>By clicking TrimURL, I agree to the <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>
+                and Use of Cookies.</p>
         </form>
     </div>
 
     <div class="faqs-two">
-        <h2>FAQs</h2>
+        <h2 id="line-three">FAQs</h2>
         <div class="details-table">
             <details>
                 <summary>How does URL shortening work?</summary>
@@ -276,7 +279,7 @@
             </details>
 
             <details>
-                <summary>How secure is the URL shortening service? Are the shortened links protected against spam or
+                <summary>How secure is the URL shortening service? Are the shortened links protected <br> against spam or
                     malicious activity?</summary>
                 <p>
                     Reputable URL shortening services use advanced security measures to prevent misuse. This
@@ -299,7 +302,7 @@
             </details>
 
             <details>
-                <summary>Is there an API available for integrating the URL shortening service into my own
+                <summary>Is there an API available for integrating the URL shortening service into my own <br>
                     applications or websites?</summary>
                 <p>
                     Yes, most URL shortening services provide APIs that developers can use to integrate
@@ -321,13 +324,13 @@
 
     <div class="footer-two">
         <div class="footer-logos">
-            <img src="" alt="">
+            <img src="./assets/scissors-assets/Logo2.png" width="130px" alt="Footer Logo">
 
             <div class="sm-logos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="./assets/scissors-assets/twitter.png" alt="">
+                <img src="./assets/scissors-assets/instagram.png" alt="">
+                <img src="./assets/scissors-assets/linkedin.png" alt="">
+                <img src="./assets/scissors-assets/facebook.png" alt="">
             </div>
 
         </div>
@@ -339,6 +342,37 @@
                     <li><a href="">Scissor 101</a></li>
                     <li><a href="">Integrations & API</a></li>
                     <li><a href="">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="flinks">
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="">Social Media</a></li>
+                    <li><a href="">Digital Marketing</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">For Developers</a></li>
+                </ul>
+            </div>
+
+            <div class="flinks">
+                <h5>Products</h5>
+                <ul>
+                    <li><a href="">Link Management</a></li>
+                    <li><a href="">QR Codes</a></li>
+                    <li><a href="">Link-in-bio</a></li>
+                </ul>
+            </div>
+
+            <div class="flinks">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="">About Scissor</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Reviews</a></li>
                 </ul>
             </div>
 
@@ -356,15 +390,7 @@
                 </ul>
             </div>
 
-            <div class="flinks">
-                <h5>Solutions</h5>
-                <ul>
-                    <li><a href="">Social Media</a></li>
-                    <li><a href="">Digital Marketing</a></li>
-                    <li><a href="">Customer Service</a></li>
-                    <li><a href="">For Developers</a></li>
-                </ul>
-            </div>
+
 
             <div class="flinks">
                 <h5>Features</h5>
@@ -377,14 +403,7 @@
                 </ul>
             </div>
 
-            <div class="flinks">
-                <h5>Products</h5>
-                <ul>
-                    <li><a href="">Link Management</a></li>
-                    <li><a href="">QR Codes</a></li>
-                    <li><a href="">Link-in-bio</a></li>
-                </ul>
-            </div>
+
 
             <div class="flinks">
                 <h5>Legal</h5>
@@ -397,25 +416,19 @@
                 </ul>
             </div>
 
-            <div class="flinks">
-                <h5>Company</h5>
-                <ul>
-                    <li><a href="">About Scissor</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Partners</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Reviews</a></li>
-                </ul>
-            </div>
+
 
         </div>
-    </div>
 
-    <div>
-        <p>Term of Service | Security | Scissor 2023</p>
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            <p>Term of Service  |  Security |  Scissor 2023</p>
+        </div>
     </div>
     </main>
+
+    <script src="scissors.js"></script>
 </body>
 
 </html>
