@@ -189,7 +189,7 @@ h1 {
 .data__container {
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  width: 100%;
   height: 220px;
   background-color: #fafbfd;
   position: relative;
@@ -414,7 +414,7 @@ h4 {
 /* FAQs One */
 
 .faqs-one {
-  width: 1440px;
+  width: 100%;
   height: 523px;
   background-image: url(../assets/scissors-assets/faq.png);
   align-content: center;
@@ -502,7 +502,7 @@ form > p {
 
 /* FAQs Second Section */
 .faqs-two {
-  width: inherit;
+  width: 100%;
   height: 1153px;
   background-image: url(../assets/scissors-assets/FAQs.png);
 }
@@ -553,7 +553,7 @@ details[open] summary::after {
 /* Footer One */
 
 .footer-one {
-  width: inherit;
+  width: 100%;
   height: 250px;
   background-image: url(../assets/scissors-assets/footerone.png);
   background-repeat: no-repeat;
@@ -583,7 +583,7 @@ details[open] summary::after {
 .footer-two {
   display: flex;
   gap: 150px;
-  width: 1440px;
+  width: 100%;
   height: 561px;
   background-image: url(../assets/scissors-assets/footertwo.png);
   padding: 50px 250px;
@@ -633,4 +633,8 @@ details[open] summary::after {
   bottom: 20px;
   left: 1100px;
   font-size: 14px;
+}
+
+.hide-break-on-laptop{
+    display: none;
 }
